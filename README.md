@@ -26,7 +26,7 @@ We aim to give people **peace of mind with every bite** by preventing harmful su
 
 ### 🚀 Get Involved
 We are currently seeking investors and partners to scale this innovation globally.  
-📧 Contact us: **[Insert Email Here]**
+📧 Contact us: **[mariahdibere@gmail.com]**
 
 ---
 
