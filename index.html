@@ -3,102 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Omega Foodtech – AI-powered food safety detector that detects and neutralizes harmful substances in your meals. Join the future of food safety." />
-  <meta name="keywords" content="Omega Foodtech, food safety, AI detector, invest in food tech" />
-  <title>Omega Foodtech | Revolutionizing Food Safety</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Omega Foodtech</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Orbitron', sans-serif; }
-    body { background: linear-gradient(135deg, #1c1c1c, #000); color: #fff; }
-    header { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #2c2c2c, #000); }
-    header h1 { font-size: 3rem; color: #39ff14; text-shadow: 0 0 20px #39ff14; }
-    header p { font-size: 1.2rem; margin: 20px 0; color: #ccc; }
-    .cta-btn { padding: 15px 30px; background: #39ff14; color: #000; font-size: 1.2rem; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; }
-    .cta-btn:hover { background: #2aff00; box-shadow: 0 0 20px #39ff14; }
-    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
-    h2 { font-size: 2.5rem; margin-bottom: 20px; text-align: center; color: #39ff14; }
-    .features, .how-it-works { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center; }
-    .feature-box { background: #111; padding: 30px; border-radius: 12px; box-shadow: 0 0 15px rgba(57, 255, 20, 0.3); }
-    .product-image { text-align: center; margin: 50px 0; }
-    .product-image img { width: 80%; max-width: 500px; border-radius: 20px; box-shadow: 0 0 25px rgba(57,255,20,0.5); }
-    form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
-    input, textarea { padding: 15px; border-radius: 8px; border: none; outline: none; font-size: 1rem; }
-    input[type="submit"] { background: #39ff14; color: #000; font-weight: bold; cursor: pointer; transition: 0.3s; }
-    input[type="submit"]:hover { background: #2aff00; box-shadow: 0 0 20px #39ff14; }
-    .social-links { text-align: center; margin-top: 40px; }
-    .social-links a { margin: 0 15px; color: #39ff14; font-size: 1.5rem; text-decoration: none; transition: 0.3s; }
-    .social-links a:hover { color: #2aff00; text-shadow: 0 0 10px #39ff14; }
-    footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #888; }
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      color: #fff;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #0d1b2a;
+      color: #fff;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      background: #1b263b;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Revolutionizing Food Safety with AI</h1>
-    <p>Detect and neutralize harmful substances before they reach your plate.</p>
-    <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Invest Now</button>
+    <h1>Omega Foodtech</h1>
+    <p>Detect. Neutralize. Eat Safe.</p>
   </header>
 
-  <section class="product-image">
-    <img src="your-prototype-image.jpg" alt="Omega Foodtech Detector" />
+  <section>
+    <h2>Your Safety, Our Mission</h2>
+    <p>We protect your health by detecting and neutralizing harmful substances in your food and beverages. With cutting-edge technology and advanced AI, we make sure what’s on your plate is safe.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
   </section>
 
-  <section id="about">
-    <h2>About Omega Foodtech</h2>
-    <p style="text-align:center; max-width: 800px; margin:auto; color:#ccc;">Omega Foodtech is pioneering AI-driven technology to ensure food safety for homes and businesses worldwide. Our device detects and neutralizes harmful substances in seconds, combining innovation, precision, and peace of mind.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omega Foodtech</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      color: #fff;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #0d1b2a;
+      color: #fff;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      background: #1b263b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Omega Foodtech</h1>
+    <p>Detect. Neutralize. Eat Safe.</p>
+  </header>
+
+  <section>
+    <h2>Your Safety, Our Mission</h2>
+    <p>We protect your health by detecting and neutralizing harmful substances in your food and beverages. With cutting-edge technology and advanced AI, we make sure what’s on your plate is safe.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
   </section>
 
-  <section id="features">
-    <h2>Key Features</h2>
-    <div class="features">
-      <div class="feature-box">AI-Powered Detection</div>
-      <div class="feature-box">Instant Neutralization</div>
-      <div class="feature-box">Compact & Stylish Design</div>
-      <div class="feature-box">Reliable for Homes & Labs</div>
-    </div>
-  </section>
-
-  <section id="how-it-works">
-    <h2>How It Works</h2>
-    <div class="how-it-works">
-      <div class="feature-box">1. Place food sample in detector</div>
-      <div class="feature-box">2. AI scans & identifies harmful substances</div>
-      <div class="feature-box">3. Neutralization or alert system triggers</div>
-      <div class="feature-box">4. Safe food guaranteed</div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Be Part of the Future of Food Safety</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="4"></textarea>
-      <input type="submit" value="Invest Now" />
-    </form>
-    <div class="social-links">
-      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Omega Foodtech. All Rights Reserved.
-  </footer>
-
-  <script>
-    const sections = document.querySelectorAll('section');
-    window.addEventListener('scroll', () => {
-      sections.forEach(sec => {
-        const rect = sec.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 100) {
-          sec.style.opacity = '1';
-          sec.style.transform = 'translateY(0)';
-        }
-      });
-    });
-    sections.forEach(sec => { sec.style.opacity = '0'; sec.style.transform = 'translateY(50px)'; sec.style.transition = 'all 0.8s ease'; });
-  </script>
 </body>
 </html>
