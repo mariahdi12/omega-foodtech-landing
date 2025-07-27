@@ -1,6 +1,6 @@
 # Omega Foodtech Landing Page
 
-![Omega Foodtech Banner](https://mariahdi12.github.io/omega-foodtech-landing/)  
+(https://mariahdi12.github.io/omega-foodtech-landing/)  
 **Detect. Neutralize. Eat Safe.**
 
 ---
