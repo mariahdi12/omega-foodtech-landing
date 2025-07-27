@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
-    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -22,20 +21,6 @@
       background-color: #fff;
       color: #333;
       line-height: 1.6;
-    }
-
-    /* Animations */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1.2s ease forwards;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     header {
@@ -94,7 +79,6 @@
       color: #FFD700;
     }
 
-    /* README SECTION */
     .readme {
       max-width: 900px;
       margin: 50px auto;
@@ -103,21 +87,21 @@
       border-radius: 12px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.08);
       text-align: left;
-      animation-delay: 0.6s;
+    }
+
+    .readme h2, .readme h3 {
+      font-family: 'Playfair Display', serif;
+      color: #0d1b2a;
+      margin-bottom: 15px;
     }
 
     .readme h2 {
-      font-family: 'Playfair Display', serif;
       font-size: 2rem;
-      margin-bottom: 15px;
-      color: #0d1b2a;
     }
 
     .readme h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-top: 20px;
-      margin-bottom: 10px;
       color: #FFD700;
     }
 
@@ -126,32 +110,33 @@
       margin-bottom: 10px;
     }
 
-    .readme ul {
+    .readme ul, .readme ol {
       padding-left: 20px;
+      margin-bottom: 15px;
     }
 
-    .preview-image {
-      width: 100%;
-      border-radius: 8px;
-      margin: 20px 0;
+    .readme a {
+      color: #0d1b2a;
+      text-decoration: underline;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <header class="fade-in">
+  <header>
     <h1>Omega Foodtech</h1>
     <p>Detect. Neutralize. Eat Safe.</p>
   </header>
 
-  <section class="fade-in" style="animation-delay: 0.3s;">
+  <section>
     <h2>Your Safety, Our Mission</h2>
     <p>We protect your health by detecting and neutralizing harmful substances in your food and beverages. With cutting-edge technology and advanced AI, we make sure what’s on your plate is safe.</p>
     <a href="#readme" class="cta-button">Learn More</a>
   </section>
 
   <!-- README Content -->
-  <div class="readme fade-in" id="readme">
+  <div class="readme" id="readme">
     <h2>About</h2>
     <p>Omega Foodtech is a pioneering solution designed to protect consumers by detecting and neutralizing harmful substances in food and beverages. Our mission is to make food safety accessible and reliable for everyone through innovation and advanced AI technology.</p>
 
@@ -173,7 +158,6 @@
       <li>Fast loading with minimal external dependencies</li>
     </ul>
 
-    
     <h3>Contact</h3>
     <p><strong>Founder:</strong> Mariah Carelle</p>
     <p>Email: your-email@example.com</p>
