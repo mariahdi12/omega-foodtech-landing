@@ -1,15 +1,29 @@
+# Omega Foodtech Landing Page
 
+![Omega Foodtech Banner](https://mariahdi12.github.io/omega-foodtech-landing/)  
+**Detect. Neutralize. Eat Safe.**
 
-  <header>
-    <h1>Omega Foodtech</h1>
-    <p>Detect. Neutralize. Eat Safe.</p>
-  </header>
+---
 
-  <section>
-    <h2>Your Safety, Our Mission</h2>
-    <p>We protect your health by detecting and neutralizing harmful substances in your food and beverages. With cutting-edge technology and advanced AI, we make sure what’s on your plate is safe.</p>
-    <a href="#contact" class="cta-button">Get Started</a>
-  </section>
+## 📌 About
+Omega Foodtech is a pioneering solution designed to protect consumers by detecting and neutralizing harmful substances in food and beverages. Our mission is to make food safety accessible and reliable for everyone through innovation and advanced AI technology.
 
-</body>
-</html>
+---
+
+## 🌐 Live Demo
+Visit the live landing page:  
+[**Omega Foodtech Landing Page**](https://mariahdi12.github.io/omega-foodtech-landing/)
+
+---
+
+## 🛠 Tech Stack
+- **HTML5** – Structure of the page  
+- **CSS3** – Responsive design & layout  
+- **Google Fonts** – Playfair Display & Lora for a classy, premium aesthetic  
+
+---
+
+## ✨ Features
+- Elegant, luxury-inspired design  
+- Responsive layout for desktop and mobile  
+- Call-to-action for early user engagement  
