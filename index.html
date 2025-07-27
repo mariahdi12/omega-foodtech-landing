@@ -14,6 +14,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
@@ -21,6 +22,20 @@
       background-color: #fff;
       color: #333;
       line-height: 1.6;
+    }
+
+    /* Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     header {
@@ -39,6 +54,7 @@
     header p {
       font-size: 1.3rem;
       font-style: italic;
+      color: #FFD700;
     }
 
     section {
@@ -52,6 +68,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 2.2rem;
       margin-bottom: 20px;
+      color: #0d1b2a;
     }
 
     section p {
@@ -61,126 +78,121 @@
 
     .cta-button {
       display: inline-block;
-      background: #0d1b2a;
-      color: #fff;
+      background: #FFD700;
+      color: #0d1b2a;
       padding: 15px 35px;
       font-size: 1.2rem;
       text-decoration: none;
       border-radius: 8px;
       transition: 0.3s ease;
       font-weight: bold;
+      border: 2px solid #FFD700;
     }
 
     .cta-button:hover {
-      background: #1b263b;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Omega Foodtech</h1>
-    <p>Detect. Neutralize. Eat Safe.</p>
-  </header>
-
-  <section>
-    <h2>Your Safety, Our Mission</h2>
-    <p>We protect your health by detecting and neutralizing harmful substances in your food and beverages. With cutting-edge technology and advanced AI, we make sure what’s on your plate is safe.</p>
-    <a href="#contact" class="cta-button">Get Started</a>
-  </section>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Omega Foodtech</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      background: transparent;
+      color: #FFD700;
     }
 
-    body {
-      font-family: 'Lora', serif;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
+    /* README SECTION */
+    .readme {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      text-align: left;
+      animation-delay: 0.6s;
     }
 
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #0d1b2a, #1b263b);
-      color: #fff;
-    }
-
-    header h1 {
+    .readme h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 15px;
+      color: #0d1b2a;
     }
 
-    header p {
-      font-size: 1.3rem;
-      font-style: italic;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    section h2 {
+    .readme h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      margin-bottom: 20px;
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #FFD700;
     }
 
-    section p {
-      font-size: 1.2rem;
-      margin-bottom: 25px;
+    .readme p, .readme li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
     }
 
-    .cta-button {
-      display: inline-block;
-      background: #0d1b2a;
-      color: #fff;
-      padding: 15px 35px;
-      font-size: 1.2rem;
-      text-decoration: none;
+    .readme ul {
+      padding-left: 20px;
+    }
+
+    .preview-image {
+      width: 100%;
       border-radius: 8px;
-      transition: 0.3s ease;
-      font-weight: bold;
-    }
-
-    .cta-button:hover {
-      background: #1b263b;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <header class="fade-in">
     <h1>Omega Foodtech</h1>
     <p>Detect. Neutralize. Eat Safe.</p>
   </header>
 
-  <section>
+  <section class="fade-in" style="animation-delay: 0.3s;">
     <h2>Your Safety, Our Mission</h2>
     <p>We protect your health by detecting and neutralizing harmful substances in your food and beverages. With cutting-edge technology and advanced AI, we make sure what’s on your plate is safe.</p>
-    <a href="#contact" class="cta-button">Get Started</a>
+    <a href="#readme" class="cta-button">Learn More</a>
   </section>
+
+  <!-- README Content -->
+  <div class="readme fade-in" id="readme">
+    <h2>About</h2>
+    <p>Omega Foodtech is a pioneering solution designed to protect consumers by detecting and neutralizing harmful substances in food and beverages. Our mission is to make food safety accessible and reliable for everyone through innovation and advanced AI technology.</p>
+
+    <h3>Live Demo</h3>
+    <p><a href="https://mariahdi12.github.io/omega-foodtech-landing/">Visit Landing Page</a></p>
+
+    <h3>Tech Stack</h3>
+    <ul>
+      <li><strong>HTML5</strong> – Structure of the page</li>
+      <li><strong>CSS3</strong> – Responsive design & layout</li>
+      <li><strong>Google Fonts</strong> – Playfair Display & Lora for a classy, premium aesthetic</li>
+    </ul>
+
+    <h3>Features</h3>
+    <ul>
+      <li>Elegant, luxury-inspired design</li>
+      <li>Responsive layout for desktop and mobile</li>
+      <li>Call-to-action for early user engagement</li>
+      <li>Fast loading with minimal external dependencies</li>
+    </ul>
+
+    <h3>Preview</h3>
+    <img class="preview-image" src="https://via.placeholder.com/900x500.png?text=Omega+Foodtech+Preview" alt="Landing Page Preview">
+
+    <h3>How to Use</h3>
+    <ol>
+      <li>Clone this repository:  
+        <code>git clone https://github.com/your-username/omega-foodtech-landing.git</code></li>
+      <li>Open <code>index.html</code> in your browser.</li>
+      <li>Or deploy using GitHub Pages for free hosting.</li>
+    </ol>
+
+    <h3>License</h3>
+    <p>This project is licensed under the MIT License – feel free to use and modify.</p>
+
+    <h3>Contact</h3>
+    <p><strong>Founder:</strong> Mariah Carelle</p>
+    <p>Email: your-email@example.com</p>
+    <p>Website: <a href="https://mariahdi12.github.io/omega-foodtech-landing/">Omega Foodtech</a></p>
+  </div>
 
 </body>
 </html>
+
