@@ -23,123 +23,231 @@
       line-height: 1.6;
     }
 
-    header {
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d1b2a;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav h1 {
+      color: #FFD700;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    /* Hero Section */
+    .hero {
       text-align: center;
-      padding: 60px 20px;
+      padding: 80px 20px;
       background: linear-gradient(135deg, #0d1b2a, #1b263b);
       color: #fff;
     }
 
-    header h1 {
+    .hero h2 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin-bottom: 15px;
     }
 
-    header p {
-      font-size: 1.3rem;
-      font-style: italic;
-      color: #FFD700;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: #0d1b2a;
-    }
-
-    section p {
+    .hero p {
       font-size: 1.2rem;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     .cta-button {
-      display: inline-block;
       background: #FFD700;
       color: #0d1b2a;
       padding: 15px 35px;
       font-size: 1.2rem;
       text-decoration: none;
       border-radius: 8px;
-      transition: 0.3s ease;
       font-weight: bold;
-      border: 2px solid #FFD700;
+      transition: 0.3s ease;
     }
 
     .cta-button:hover {
       background: transparent;
       color: #FFD700;
+      border: 2px solid #FFD700;
     }
 
-    .readme {
-      max-width: 900px;
+    /* Sections */
+    section {
+      max-width: 1000px;
       margin: 50px auto;
-      padding: 30px;
-      background: #f9f9f9;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      text-align: left;
+      padding: 20px;
     }
 
-    .readme h2, .readme h3 {
+    section h3 {
       font-family: 'Playfair Display', serif;
+      font-size: 2rem;
       color: #0d1b2a;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Founder Bio */
+    .bio {
+      text-align: center;
+    }
+
+    .bio img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #FFD700;
+    }
+
+    /* Prototype */
+    .prototype {
+      text-align: center;
+    }
+
+    .prototype img {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       margin-bottom: 15px;
     }
 
-    .readme h2 {
-      font-size: 2rem;
+    /* Contact */
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
     }
 
-    .readme h3 {
-      font-size: 1.4rem;
-      margin-top: 20px;
-      color: #FFD700;
+    input, textarea {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
 
-    .readme p {
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-    }
-
-    .readme a {
+    button {
+      background: #FFD700;
       color: #0d1b2a;
-      text-decoration: underline;
+      padding: 12px;
+      font-size: 1.1rem;
       font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: transparent;
+      color: #FFD700;
+      border: 2px solid #FFD700;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d1b2a;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    @media(max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <!-- Navigation -->
+  <nav>
     <h1>Omega Foodtech</h1>
-    <p>Detect. Neutralize. Eat Safe.</p>
-  </header>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#bio">Founder</a></li>
+      <li><a href="#prototype">Prototype</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section>
-    <h2>Your Safety, Our Mission</h2>
-    <p>We protect your health by detecting and neutralizing harmful substances in your food and beverages. With cutting-edge technology and advanced AI, we make sure what’s on your plate is safe.</p>
-    <a href="#readme" class="cta-button">Learn More</a>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2>Detect. Neutralize. Eat Safe.</h2>
+    <p>Invest in the future of food safety technology with Omega Foodtech.</p>
+    <a href="#contact" class="cta-button">Invest Now</a>
   </section>
 
-  <!-- About + Contact -->
-    <h2>About</h2>
-    <p>Omega Foodtech is a pioneering solution designed to protect consumers by detecting and neutralizing harmful substances in food and beverages. Our mission is to make food safety accessible and reliable for everyone through innovation and advanced AI technology.</p>
+  <!-- About Us -->
+  <section id="about">
+    <h3>About Us</h3>
+    <p>Omega Foodtech is revolutionizing food safety with cutting-edge AI technology that detects and neutralizes harmful substances in food and beverages, ensuring health and confidence for every consumer.</p>
+  </section>
 
-    <h3>Contact</h3>
-    <p><strong>Founder:</strong> Mariah Carelle</p>
-    <p>Email: mariahdibere@gmail.com</p>
-    <p>Website: <a href="https://mariahdi12.github.io/omega-foodtech-landing/">Omega Foodtech</a></p>
-  </div>
+  <!-- Founder Bio -->
+  <section id="bio" class="bio">
+    <h3>Founder</h3>
+    <img src="https://github.com/mariahdi12/omega-foodtech-landing/blob/main/FB_IMG_1741348426257.jpg" alt="Founder Image">
+    <p><strong>Mariah Carelle</strong> – Visionary innovator and founder of Omega Foodtech, dedicated to making food safety accessible and reliable worldwide.</p>
+  </section>
+
+  <!-- Prototype -->
+  <section id="prototype" class="prototype">
+    <h3>Our Prototype</h3>
+    <img src="https://via.placeholder.com/800x500" alt="Prototype Image">
+    <p><a href="#contact" class="cta-button">View Prototype</a></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Omega Foodtech | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
-
