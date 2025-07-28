@@ -7,16 +7,17 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f9ff;
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
       color: #333;
     }
 
+    /* Header */
     header {
-      background-color: #0056d2;
-      color: #fff;
+      background-color: #0B162A; /* Dark Blue */
+      color: #FFD700; /* Yellow */
       text-align: center;
-      padding: 20px;
+      padding: 20px 0;
     }
 
     header h1 {
@@ -24,10 +25,11 @@
       font-size: 2.5rem;
     }
 
+    /* Navigation */
     nav {
       display: flex;
       justify-content: center;
-      background-color: #003b91;
+      background-color: #101D42;
       padding: 10px;
     }
 
@@ -35,57 +37,94 @@
       color: #fff;
       text-decoration: none;
       margin: 0 15px;
+      font-size: 1rem;
       font-weight: bold;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #FFD700;
     }
 
-    .hero {
+    /* Sections */
+    section {
+      padding: 50px 20px;
       text-align: center;
-      padding: 40px 20px;
-      background-color: #e6f0ff;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #0B162A;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      color: #555;
+    }
+
+    /* Hero */
+    .hero {
+      background-color: #0B162A;
+      color: #fff;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      color: #FFD700;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #ddd;
     }
 
     .hero img {
       width: 100%;
       max-width: 400px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin: 20px 0 10px;
-      color: #003b91;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      color: #555;
-      max-width: 600px;
-      margin: auto;
+      margin: 20px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .cta-btn {
       display: inline-block;
-      margin-top: 20px;
       padding: 14px 28px;
-      background-color: #0056d2;
-      color: #fff;
-      font-size: 1rem;
-      border-radius: 6px;
+      background-color: #FFD700;
+      color: #000;
+      font-weight: bold;
       text-decoration: none;
+      border-radius: 6px;
       transition: 0.3s ease;
     }
 
     .cta-btn:hover {
-      background-color: #003b91;
+      background-color: #e6c200;
     }
 
+    /* Founder image */
+    .founder-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Prototype image */
+    .prototype-img {
+      width: 200px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Contact */
     footer {
-      background-color: #003b91;
+      background-color: #101D42;
       color: #fff;
       text-align: center;
       padding: 15px;
@@ -94,25 +133,51 @@
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <h1>Omega Foodtech</h1>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About Us</a>
+    <a href="#founder">Founder</a>
+    <a href="#prototype">Prototype</a>
     <a href="#contact">Contact</a>
-    <a href="#invest">Invest Now</a>
   </nav>
 
+  <!-- Hero Section -->
   <section class="hero" id="home">
-    <img src="FB_IMG_1741348426257.jpg" alt="Omega Foodtech">
     <h2>Be in Control of What's on Your Plate</h2>
-    <p>Our technology detects and neutralizes harmful substances in your food. Stay safe and eat smart with Omega Foodtech.</p>
+    <p>Detect and neutralize harmful substances in your food. Stay safe, eat smart with Omega Foodtech.</p>
+    <img src="FB_IMG_1741348426257.jpg" alt="Omega Foodtech">
     <a href="#invest" class="cta-btn">Invest Now</a>
   </section>
 
-  <footer>
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Omega Foodtech is dedicated to making food safety accessible and reliable worldwide. We develop cutting-edge technology that identifies and neutralizes harmful substances in food, ensuring what you eat is safe and healthy.</p>
+  </section>
+
+  <!-- Founder -->
+  <section id="founder">
+    <h2>Founder</h2>
+    <img src="FB_IMG_1741348426257.jpg" alt="Founder Image" class="founder-img">
+    <p><strong>Mariah Carelle</strong> – Visionary innovator and founder of Omega Foodtech, committed to revolutionizing the way we think about food safety and technology.</p>
+  </section>
+
+  <!-- Prototype -->
+  <section id="prototype">
+    <h2>Our Prototype</h2>
+    <img src="prototype.jpg" alt="Prototype Image" class="prototype-img">
+    <a href="#" class="cta-btn">View Prototype</a>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <p>Contact us at <strong>info@omegafoodtech.com</strong></p>
     <p>© 2025 Omega Foodtech. All rights reserved.</p>
   </footer>
 </body>
